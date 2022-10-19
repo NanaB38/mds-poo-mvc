@@ -7,12 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>My first blog post</h1>
-
+    <h1>My blogs</h1>
 <ul>
     <li><a href="/posts/my-first-post">My first blog</a></li>
-    <li><a href="posts//my-second-post">My second blog</li>
-     <li href="posts//my-third-post">My third blog</li>
+    <li><a href="/posts/my-second-post">My second blog</a></li>
+     <li><a href="/posts/my-third-post">My third blog</a></li>
 </ul>
 </body>
 </html>
