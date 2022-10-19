@@ -11,7 +11,7 @@ php --version
 # Zend Engine v4.1.11, Copyright (c) Zend Technologies
 #     with Zend OPcache v8.1.11, Copyright (c), by Zend Technologies
 
-composer version
+composer --version
 # Composer version 2.4.3 2022-10-14 16:56:41
 ```
 
@@ -61,13 +61,24 @@ Optional:
 
 ## Exercises
 
+After each exercise, remember to commit your work before moving to the next.
+This will allow you to reset your work to a known state if you need to.
+
+
+### Exercise 0: Setting up Laravel
+
+Steps:
+- Create a new Laravel project if it is not done already: `php create-project ...` (see above)
+- Open the project in VS Code
+- Create a local git repository
+- Commit your work with an "Initial commit"
+
+
 ### Exercise 1: Landing page
 
 In this exercise, we will first understand how Laravel works to display a simple landing page.
 
 Steps:
-- Create a new Laravel project if it is not done already: `php create-project ...` (see above)
-- Open the project in VS Code
 - Go to `routes/web.php` to check the existing routes
 - Modify the existing route for `/` to display a new view `home`
 - Create a new view in `resources/views/home.blade.php` (You can make a simple page)
@@ -154,7 +165,8 @@ Steps:
 
 You can implement this using `Routes`, `Models` and `Views` only.
 
-### Exercise 6: Use a controller to manage the Post
+
+### Exercise 6: Use a controller to manage posts
 
 In this exercise, we will group all the actions that can happen on our posts inside a Controller.
 
@@ -164,3 +176,14 @@ Steps:
 - Implement a static method `show()` to handle showing a single post
 
 You can use `artisan` to create the controller: `php artisan make:controller PostController`
+
+
+### Going further
+
+So far we have stored articles locally and we are only able to write them in a text editor.
+
+To make the application more dynamic, we could add some features:
+- Add a category to each post and a way to display them on a page for each category
+- A search bar to filter the articles
+- A Database to store our posts
+- A Form that allows creating new posts
